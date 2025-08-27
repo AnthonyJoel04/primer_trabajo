@@ -1,6 +1,6 @@
-# Programación y servicios web — Parte 1. Conceptos básicos
+# Programación y servicios web — Trabajo #1. Conceptos básicos
 
-## Objetivo
+# Objetivo
 Crear un **Sistema de Gestión de Biblioteca con funcionalidades de préstamos, devoluciones, búsqueda y reportes, integrando los conceptos vistos.**
 
 
