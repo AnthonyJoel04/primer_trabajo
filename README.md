@@ -12,8 +12,7 @@ El proyecto se realizo de la siguiente manera:
 git config --global user.name "AnthonyJoel04"
 git config --global user.email "aj.montanez04@ciaf.edu.co"
 
-Aunque lo realice de manera diferente, cree un codespace para no tener que colocar código cada vez que quiera 
-hacer un push, entonces solo hago commit mediante el control de código fuente.
+El proyecto se subio de manera diferente, cree un codespace para simplificar los commit y pushes, solo hago commit mediante el control de código fuente.
 
 # 2) Crear proyecto de npm
 
