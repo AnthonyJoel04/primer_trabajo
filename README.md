@@ -55,7 +55,7 @@ Implemente las 10 funciones descritas pero con nombres en español para facilita
 git init
 echo "node_modules/" > .gitignore
 git add .
-git commit -m "feat: primer_trabajo"
+git commit -m "primer_trabajo"
 
 # 5) Subir a GitHub
 
@@ -74,7 +74,7 @@ el codespace se vuelve mucho mas sencillo de manera que con código para cada co
 
 Instalación, se realizo instalación de GIT y Node.js para poder ejecutar el código.
 
-- 1) Crear libro (titulo, autor, genero, isbn)
+1) Crear libro (titulo, autor, genero, isbn)
 
 Propósito: crear un objeto libro.
 Parámetros: strings titulo, autor, genero, isbn.
