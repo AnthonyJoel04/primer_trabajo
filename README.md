@@ -75,6 +75,7 @@ el codespace se vuelve mucho mas sencillo de manera que con código para cada co
 Instalación, se realizo instalación de GIT y Node.js para poder ejecutar el código.
 
 - Crear libro (titulo, autor, genero, isbn)
+
 Propósito: crear un objeto libro.
 Parámetros: strings titulo, autor, genero, isbn.
 Retorna: objeto con:
@@ -87,49 +88,58 @@ fechaDevolucion: null,
 fechaRegistro: Date.
 
 - Agregar libro (biblioteca, titulo, autor, genero, isbn)
+
 Propósito: agregar un libro a biblioteca.
 Parámetros: array biblioteca, strings del libro.
 Acción: llama a crearLibro y hace push.
 Retorna: el libro creado.
 
 - Eliminar libro (biblioteca, idLibro)
+
 Propósito: eliminar por ID.
 Parámetros: array biblioteca, número idLibro.
 Acción: findIndex + splice.
 Retorna: libro eliminado o null si no existe.
 
 - Prestar libro (biblioteca, prestamos, idLibro, nombrePersona, dias = 14)
+
 Propósito: registrar un préstamo.
 Parámetros: array biblioteca, prestamos (Map), idLibro (número), nombrePersona (string), dias (número; por defecto 14).
 Acciones: verifica existencia/disponibilidad; setea disponible=false, prestadoA, fechaPrestamo, fechaDevolucion; añade al Map.
 Retorna: { ok:boolean, mensaje:string, libro:object, fechaDevolucion:Date }.
 
 - Devolver libro (biblioteca, prestamos, idLibro, tarifa = 0.5)
+
 Propósito: devolver un libro prestado.
 Acciones: valida que está prestado; calcula multa; restaura campos; quita del Map.
 Retorna: { ok:boolean, mensaje:string, multa:number }.
 
 - Calcular multa (fechaDevolucion, tarifa = 0.5)
+
 Propósito: calcular multa por atraso.
 Acción: si hoy > fechaDevolucion, multa = ceil(días de atraso) * tarifa; si no, 0.
 Retorna: número.
 
 - Buscar libros (biblioteca, texto)
+
 Propósito: buscar por título, autor o género (case-insensitive).
 Acción: filtra biblioteca comparando cadenas normalizadas (puedes ignorar tildes).
 Retorna: array de coincidencias.
 
 - Libros por genero (biblioteca, genero)
+
 Propósito: obtener libros de un género exacto (case-insensitive).
 Acción: filter por genero.
 Retorna: array.
 
 - Libros vencidos (prestamos, tarifa)
+
 Propósito: listar libros cuyo fechaDevolucion ya pasó.
 Acción: recorre el Map y arma objetos con id, titulo, persona, fechaDevolucion y multa (usando calcularMulta).
 Retorna: array de vencidos.
 
 - Reporte de biblioteca (biblioteca, prestamos)
+
 Propósito: generar estadísticas de la biblioteca.
 Retorna: objeto con:
 total (libros totales),
