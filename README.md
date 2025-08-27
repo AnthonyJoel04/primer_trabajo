@@ -62,6 +62,8 @@ git remote add origin https://github.com/AnthonyJoel04/primer_trabajo.git
 git branch -M main
 git push -u origin main
 
+O codespace como en mi caso para que sea mas sencillo.
+
 6) Documentar proyecto
 
 Incluí en este README: cómo se hizo, dificultades encontradas, instalación y uso de cada función.
@@ -135,3 +137,5 @@ prestados (cantidad en prestamos),
 disponibles (en biblioteca con disponible=true),
 vencidos (cantidad de librosVencidos),
 totalMultas (suma de multas de vencidos).
+
+Anthony Montañez 4to semestre
