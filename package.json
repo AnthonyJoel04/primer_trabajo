@@ -1,14 +1,14 @@
 {
-  "name": "sistema-biblioteca",
+  "nombre": "sistema-biblioteca",
   "version": "1.0.0",
-  "description": "Sistema de biblioteca en JavaScript con funciones en español.",
+  "descripción": "Sistema de biblioteca en JavaScript con funciones en español.",
   "main": "archivo.js",
   "scripts": {
     "start": "node archivo.js"
   },
-  "author": "Jhon",
-  "license": "ISC",
-  "dependencies": {
+  "autor": "Jhon",
+  "licencia": "ISC",
+  "dependencias": {
     "chalk": "^5.6.0"
   }
 }
